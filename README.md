@@ -19,7 +19,7 @@ Zusätzlich werden die Daten visualisiert (Temperaturverlauf) und die Datenbank 
 
 ## 📦 Verwendete Technologien  
 
-- Python 3.10+  
+- Python  
 - Requests  
 - Pandas  
 - SQLite3  
