@@ -90,8 +90,14 @@ SELECT DISTINCT city FROM weather;
 SELECT temp, timestamp FROM weather 
 WHERE city = 'Cologne' ORDER BY timestamp;
 ```
-
-
+```sql
+SELECT max(weather.temp) FROM weather 
+WHERE timestamp like '%02-18%';
+```
+```sql
+SELECT * FROM weather
+WHERE weather_desc LIKE '%cloud%';
+```
 
 
 
