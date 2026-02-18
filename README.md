@@ -60,7 +60,7 @@ df.to_sql("weather", conn, if_exists="append", index=False)
 ```  
 <br>
 
-## **6. Analyse & Visualisierung**  
+## 4. Analyse & Visualisierung  
 Der Temperaturverlauf wird mit Matplotlib geplottet.  
 <img width="996" height="498" alt="image" src="https://github.com/user-attachments/assets/1e81d3aa-1d94-436c-b48e-674214911f81" />  
 
