@@ -56,19 +56,40 @@ Die wichtigsten Werte werden extrahiert und in ein DataFrame geschrieben:
 Die Daten werden in die SQLite‑Datenbank weather.db geschrieben:  
 
 ```python  
-df.to_sql("weather", conn, if_exists="append", index=False)
-```  
+df.to_sql("weather", conn, if_exists="append", index=False)  
+```
+
 <br>
 
-## 4. Analyse & Visualisierung  
+## **4. Analyse & Visualisierung**  
 Der Temperaturverlauf wird mit Matplotlib geplottet.  
 <img width="996" height="498" alt="image" src="https://github.com/user-attachments/assets/1e81d3aa-1d94-436c-b48e-674214911f81" />  
 
+<br>
 
+## **🔑 API Key**  
+Du benötigst einen API‑Key von OpenWeatherMap:  
 
+https://openweathermap.org/api  
 
+Im Skript wird er direkt übergeben:  
+```python  
+run_weather_etl("DEIN_API_KEY")  
+```  
+<br>
 
-
+## **🧪 SQL-Beispiele für DataGrip**  
+```sql  
+SELECT * FROM weather 
+ORDER BY timestamp DESC;
+```
+```sql  
+SELECT DISTINCT city FROM weather;
+```
+```sql
+SELECT temp, timestamp FROM weather 
+WHERE city = 'Cologne' ORDER BY timestamp;
+```
 
 
 
